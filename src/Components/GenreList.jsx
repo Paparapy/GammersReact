@@ -16,7 +16,7 @@ function GenreList({genereId,selectedGenresName}) {
   };
   return (
     <div className="min-h-[100vh]">
-      <h2 className="text-[30px] font-bold dark:text-white">Genre</h2>
+      <h2 className="text-[30px] font-bold dark:text-white">Types du jeux</h2>
       {genreList.map((item,index) => (
         <div 
         onClick={()=>{setActiveIndex(index);genereId(item.id);selectedGenresName(item.name)}}
